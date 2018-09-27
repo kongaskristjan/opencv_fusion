@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 # coding: utf-8
 
@@ -76,10 +77,10 @@ if args.theano_backend is True and args.quantize is True:
 
 # In[ ]:
 
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import tensorflow as tf
 from pathlib import Path
-from keras import backend as K
+from tensorflow.keras import backend as K
 
 output_fld =  args.input_fld if args.output_fld == '' else args.output_fld
 if args.output_model_file == '':
